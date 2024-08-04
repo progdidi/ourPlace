@@ -1,3 +1,88 @@
 @import 'global';
 @import 'var';
 @import 'reset';
+
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+        .menu {
+            padding: 5px 0;
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: 35px;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 170%;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #35312e;
+                &-item {
+                    border-bottom: 2px solid transparent;
+                    transition: all 0.3s;
+                    &:hover {
+                        border-bottom: 2px solid #35312e;
+                    }
+                }
+            }
+        }
+        
+        .logo {
+            &__img {
+            }
+        }
+        
+        .user-acc {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #f5f1e9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__img {
+            }
+        }
+        
+    }
+}
+
+.promo {
+    background-image: url('../images/promo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: calc(100vh - 82px);
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding-top: 168px;
+        padding-left: 343px;
+        .promo__info {
+            max-width: 248px;
+            .promo__text {
+                line-height: 100%;
+                text-transform: uppercase;
+                color: #35312e;
+                margin-bottom: 8px;
+            }
+            .promo__title {
+                font-size: 50px;
+                line-height: 144%;
+                letter-spacing: 0.02em;
+                color: #35312e;
+                span {
+    
+                }
+            }
+            .promo__btn {
+            }
+        }
+        
+    }
+}
+
+
