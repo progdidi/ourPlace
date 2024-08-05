@@ -305,4 +305,106 @@
     }
 }
 
+.footer {
+    &__main {
+        background-color: #6c674d;
+        padding-top: 81px;
+        padding-bottom: 115px;
+        font-size: 16px;
+        line-height: 191%;
+        color: rgba(245, 241, 233, 0.6);
+        .footer-newsletter {
+            &__title {
+                font-weight: 700;
+                font-size: 23px;
+                line-height: 251%;
+                letter-spacing: 0.03em;
+                color: #f5f1e9;
+                margin-bottom: 11px;
+            }
+
+            &__text {
+                font-size: 14px;
+                line-height: 171%;
+                color: #fcfaf6;
+                margin-bottom: 63px;
+            }
+
+            &__form {
+                background-color: #fcfaf6;;
+                &-input {
+                    padding: 5px 20px;
+                    &::placeholder {
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 445%;
+                        letter-spacing: 0.05em;
+                        color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+
+                &-btn {
+                    font-weight: 700;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: #4f463f;
+                    padding: 20px;
+
+                }
+            }
+        }
+
+        .footer__menu {
+            display: flex;
+            .footer__menu-list {
+                max-width: 150px;
+                .footer__menu-title {
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 170%;
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    color: #f5f1e9;
+                    margin-bottom: 10px;
+                }
+                .footer__menu-item {
+                    font-size: 15px;
+                    line-height: 204%;
+                    color: rgba(245, 241, 233, 0.6);
+                    margin-bottom: 9px;
+                }
+            }
+        }
+
+        .footer-countries {
+            &__text {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 170%;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #f5f1e9;
+                margin-bottom: 10px;
+            }
+            &__buttons {
+                display: flex;
+                gap: 24px;
+
+            }
+        }
+    }
+
+    &__bottom {
+        background-color: #807c62;
+        padding: 20px 0;
+        font-size: 14px;
+        line-height: 194%;
+        color: rgba(252, 250, 246, 0.5);
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
