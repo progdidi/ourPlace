@@ -196,4 +196,71 @@
     }
 }
 
+.limited {
+    padding: 80px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 167%;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #35312e;
+        margin-bottom: 21px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 161%;
+        text-align: center;
+        color: #4f463f;
+        margin-bottom: 73px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .limited__item {
+            &-media {
+                margin-bottom: 15px;
+            }
+
+            &-title {
+                font-size: 14px;
+                line-height: 170%;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                text-align: center;
+                color: #35312e;
+                margin-bottom: 4px;
+            }
+            &-price {
+                line-height: 150%;
+                letter-spacing: 0.01em;
+                text-align: center;
+                color: #6e635a;
+                margin-bottom: 6px;
+            }
+
+            &-descr {
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0.01em;
+                text-align: center;
+                color: #6e635a;
+            }
+            &-colors {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                .limited__item-color {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color:  #ccbd9e;
+                }
+            }
+        }
+    }
+}
+
 
