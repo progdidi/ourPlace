@@ -85,4 +85,50 @@
     }
 }
 
+.brands {
+    background-color: #F5F1E9;
+    padding: 45px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #35312e;
+        margin-bottom: 24px;
+    }
+
+    &__items {
+        padding: 0 74px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.welcome {
+    padding-top: 121px;
+    padding-bottom: 114px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .welcome__title {
+            font-weight: 700;
+            font-size: 41px;
+            line-height: 113%;
+            letter-spacing: 0.03em;
+            text-align: center;
+            color: #35312e;
+            max-width: 400px;
+        }
+    
+        .welcome__text {
+            color: #4f463f;
+        }
+
+    }
+    
+}
+
 
