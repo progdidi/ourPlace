@@ -79,6 +79,16 @@
                 }
             }
             .promo__btn {
+                background-color:  #d37657;
+                border-radius: 2px;
+                padding: 19px 30px;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 170%;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fff;
+
             }
         }
         
@@ -279,7 +289,7 @@
                 color: #35312e;
                 margin-bottom: 33px;
             }
-            |&-title {
+            &-title {
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 192%;
