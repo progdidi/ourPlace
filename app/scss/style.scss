@@ -5,7 +5,6 @@
 .header {
     position: relative;
     &__inner {
-        
         padding: 25px 0;
         padding-right: 50px;
         .menu {
@@ -85,7 +84,7 @@
         display: flex;
         align-items: center;
         padding-top: 168px;
-        padding-left: 343px;
+        padding-left: 25%;
         .promo__info {
             max-width: 248px;
             .promo__text {
@@ -138,9 +137,10 @@
 
     &__items {
         padding: 0 74px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         align-items: center;
+        grid-gap: 10%;
     }
 }
 
@@ -158,12 +158,12 @@
             letter-spacing: 0.03em;
             text-align: center;
             color: #35312e;
-            max-width: 400px;
+            max-width: 30%;
         }
     
         .welcome__text {
             color: #4f463f;
-            max-width: 650px;
+            max-width: 60%;
         }
 
     }
@@ -264,7 +264,7 @@
     &__items {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 5%;
+        grid-gap: 5%;
         .limited__item {
             height: 450px;
             display: flex;
@@ -323,8 +323,8 @@
 
 .follow {
     &__inner {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-shrink: 1;
         .follow__img {
             object-fit: cover;
             width: 100%;
@@ -332,7 +332,7 @@
         .follow__info {
             background-color: #f5f1e9;
             padding: 110px 15px;
-            width: 100%;
+            min-width: 35%;
             &-subtitle {
                 font-size: 11px;
                 line-height: 185%;
@@ -379,7 +379,11 @@
         font-size: 16px;
         line-height: 191%;
         color: rgba(245, 241, 233, 0.6);
+        .footer__inner {
+            gap: 40px;
+        }
         .footer-newsletter {
+            max-width: 45%;
             &__title {
                 font-weight: 700;
                 font-size: 23px;
@@ -429,9 +433,12 @@
         }
 
         .footer__menu {
+            width: 450px;
             display: flex;
+            flex-wrap: wrap;
             .footer__menu-list {
-                max-width: 150px;
+                width: 150px;
+                margin-bottom: 50px;
                 .footer__menu-title {
                     font-weight: 700;
                     font-size: 12px;
@@ -446,6 +453,7 @@
                     line-height: 204%;
                     color: rgba(245, 241, 233, 0.6);
                     margin-bottom: 9px;
+                    max-width: 121px;
                 }
             }
         }
@@ -463,6 +471,9 @@
             &__buttons {
                 display: flex;
                 gap: 24px;
+                .footer-countries__btn {
+
+                }
 
             }
         }
