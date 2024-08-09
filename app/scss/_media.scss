@@ -1,4 +1,9 @@
 @media (max-width: 1000px) {
+    .follow {
+        &__inner {
+            grid-template-columns: 1fr 1.5fr 1fr;
+        }
+    }
     .footer {
         &__main {
             .footer__inner {
@@ -26,6 +31,22 @@
         padding-bottom: 100px;
         &__items {
             grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .follow {
+        &__inner {
+            display: flex;
+            flex-wrap: wrap;
+            .follow__info {
+                order: 3;
+            }
+            .follow__media {
+                width: 50%;
+            }
+            .follow__img {
+              
+            }
         }
     }
 }
@@ -177,6 +198,21 @@
     .limited {
         &__items {
             grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .follow {
+        &__inner {
+            flex-direction: column;
+            .follow__media {
+                width: 100%;
+                &:first-child {
+                    display: none;
+                }
+            }
+            .follow__info {
+                order: unset;
+            }
         }
     }
 
