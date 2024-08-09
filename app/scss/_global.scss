@@ -37,4 +37,37 @@ button{
     margin: 0 auto;
 }
 
+.product-color-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    &.active {
+        border: 3px solid #e09d81;
+    }
+    &.pink {
+        background-color: #e09d81;
+    }
+    &.blue {
+        background-color:  #748ea1;
+    }
+    &.brown {
+        background-color: #b76d47;
+    }
+    &.gray {
+        background-color: #7d836e;
+    }
+    &.red {
+        background-color: #c33636;
+    }
+    &.white {
+        background-color: #cdc7b3;
+    }
+    &.gray2 {
+        background-color: #595752;
+    }
+    &.white2 {
+        background-color: #d3c2ca;
+    }
+}
+
 
